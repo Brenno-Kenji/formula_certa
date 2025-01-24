@@ -6,9 +6,12 @@ warnings.simplefilter(action='ignore', category=UserWarning)
 
 class ExtractDataTxt:
     def __init__(self, raw_data_path: str) -> None:
-        '''
-        Método construtor para extrair dados de um arquivo txt
-        '''
+        """
+        Método construtor para extrair dados de um arquivo txt.
+
+        Args:
+            raw_data_path (str): Caminho do arquivo txt que contém os dados.
+        """
         self.raw_data_path = raw_data_path
 
     def extract_file_data(self) -> list:
